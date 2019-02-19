@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>¡Bienvenido(a) a Trivia History!</h1>
+
+        <div id="inicio">
+            <label for="Name"> ¿Cuál es tu nombre?</label>
+            <input type="text" id="name" />
+          <button id="btn-siguiente" class="btn">siguiente</button>
+        </div>
+
+          <div id="temas" class="hidden">
+            <strong><p>Vamos a jugar</p></strong>
+          <button id="btn-tema1" class="btn">Historia-Perú</button>
+          <button id="btn-tema2" class="btn">Historia-Universal</button>
+          </div>
+
+          <div id="historiap" class="hidden">
+            <h1>Historia del Perú</h1>
+
+<form name="quiz">
+  <p>¿Cómo se llamó el primer Inca</p>
+  <input type="radio" id="ans1" name="question1" value="Pachacutec">Pachacutec<br>
+  <input type="radio" id="ans2"name="question1" value="Manco Capac">Manco Capac<br>
+  <input type="radio" id="ans3"name="question1" value="Atahualpa">Atahualpa<br>
+
+  <p>¿En qué año fue la indepencia del Perú?</p>
+  <input type="radio" id="ans1.1" name="question2" value="1821">1821<br>
+  <input type="radio" id="ans2.1" name="question2" value="1830">1830<br>
+  <input type="radio" id="ans3.1"name="question2" value="1824">1824<br>
+
+  <p>¿Cuántos países conformaban el Virreinato de Perú?</p>
+  <input type="radio" id="ans1.2"name="question3" value="5">5<br>
+  <input type="radio" id="ans2.2"name="question3" value="8">8<br>
+  <input type="radio" id="ans3.2"name="question3" value="6">6<br>
+</form>
+<button  class="btn" onclick="fQuestion1()">Resultado</button>
+          </div>
+
+          <div id="historiau" class="hidden">
+            <h1>Historia Universal</h1>
+
+<form  name="quiz1">
+  <p>¿En que año Cristobal Colon descucbrio america?</p>
+  <input type="radio" id="ans1q1"name="question1" value="1482">1482<br>
+  <input type="radio" id="ans2q1"name="question1" value="1570">1570<br>
+  <input type="radio" id="ans3q1"name="question1" value="1492">1492<br>
+
+  <p>¿En que siglo la peste bubonica arraso con Europa?</p>
+  <input type="radio" id="ans2.1q2"name="question2" value="siglo XII">siglo XII<br>
+  <input type="radio" id="ans2.2q2"name="question2" value="siglo XIII">siglo XIII<br>
+  <input type="radio" id="ans2.3q2"name="question2" value="siglo XIV">siglo XIV<br>
+
+  <p>En el antiguo Egipto la gente se rasuraba las cejas cuando este animal moria:</p>
+  <input type="radio" id="ans3.1q3"name="question3" value="gato">gato<br>
+  <input type="radio" id="ans3.2q3"name="question3" value="perro">perro<br>
+  <input type="radio" id="ans3.3q3"name="question3" value="langosta">langosta<br>
+
+</form>
+<button class="btn" onclick="fQuestion2()">Resultado</button>
+          </div>
+
+          <script type="text/javascript" src="app.js">
+          </script>
+  </body>
+</html>
